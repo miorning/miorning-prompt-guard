@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Miorning Prompt Guard",
+  "version": "1.5.5",
+  "description": "AI视频提示词保险栓 v1.5.5：全成就彩蛋按钮常驻，未完成为灰色，完成后为红色。",
+  "permissions": [
+    "clipboardRead",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Miorning Prompt Guard"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/*"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
