@@ -1,4 +1,4 @@
-<img width="205" height="281" alt="image" src="https://github.com/user-attachments/assets/29b03411-a701-45ee-8911-cc1dfe300d9c" /># Miorning Prompt Guard
+# Miorning Prompt Guard
 
 # 插件教学视频地址：https://space.bilibili.com/353186187/lists/8624370
 
