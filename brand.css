@@ -1,0 +1,76 @@
+/* MIORNING: charcoal plush, cotton cream, scarf red. No host-page selectors. */
+html.mpg-theme-night {
+  --mpg-bg: #191817; --mpg-bg-2: #242220; --mpg-bg-3: #201e1c;
+  --mpg-text: #f2eee6; --mpg-muted: #c3bbae; --mpg-muted-2: #a1988c;
+  --mpg-border: #484139; --mpg-border-2: #36312c;
+  --mpg-btn: #2c2825; --mpg-btn-hover: #39322b;
+  --mpg-primary-bg: #f2eee6; --mpg-primary-text: #191817;
+  --mpg-input-bg: #121211; --mpg-float-bg: #191817;
+  --mpg-accent: #e46960; --mpg-scarf: #b31919;
+}
+html.mpg-theme-day {
+  --mpg-bg: #f2eee6; --mpg-bg-2: #e9e2d7; --mpg-bg-3: #eee7dc;
+  --mpg-text: #28231f; --mpg-muted: #62584e; --mpg-muted-2: #74695e;
+  --mpg-border: #c8bbab; --mpg-border-2: #d8cebf;
+  --mpg-btn: #e5dacb; --mpg-btn-hover: #dbccba;
+  --mpg-primary-bg: #28231f; --mpg-primary-text: #fffaf1;
+  --mpg-input-bg: #faf6ef; --mpg-float-bg: #f2eee6;
+  --mpg-accent: #a91f1c; --mpg-scarf: #b31919;
+}
+
+/* A host's button decoration must never become our floating black dot. */
+#mpg-floating-dock::before, #mpg-floating-dock::after,
+#mpg-floating-dock *::before, #mpg-floating-dock *::after {
+  content: none !important; display: none !important;
+}
+#mpg-floating-babble, #mpg-floating-hint, #mpg-floating-drag {
+  visibility: hidden !important;
+}
+#mpg-floating-babble:empty { display: none !important; }
+#mpg-toast:empty, #mpg-inspiration-toast:empty { display: none !important; }
+#mpg-toast:not(.show) { visibility: hidden !important; pointer-events: none !important; }
+#mpg-floating-babble.show:not(:empty),
+#mpg-floating-dock:hover #mpg-floating-hint,
+#mpg-floating-dock:focus-within #mpg-floating-hint,
+#mpg-floating-dock:hover #mpg-floating-drag,
+#mpg-floating-dock:focus-within #mpg-floating-drag,
+#mpg-floating-dock.dragging #mpg-floating-drag {
+  visibility: visible !important;
+}
+#mpg-floating-dock:focus-within #mpg-floating-hint,
+#mpg-floating-dock:focus-within #mpg-floating-drag {
+  opacity: 1 !important; pointer-events: auto !important;
+}
+#mpg-floating-babble:not(.show) { visibility: hidden !important; pointer-events: none !important; }
+#mpg-floating { border-color: var(--mpg-scarf) !important; }
+#mpg-floating img { display: block !important; }
+
+/* All surfaces share the same cotton/charcoal materials; wheel skins remain intact. */
+#mpg-manager-root .mpg-manager, #mpg-modal-root .mpg-modal,
+#mpg-collector-root .mpg-collector, #mpg-inspiration-root .mpg-inspiration-panel,
+.mpg-trash-talk-settings, #mpg-hotkey-panel-root .mpg-mini-panel {
+  border-top-color: var(--mpg-scarf) !important;
+}
+#mpg-manager-root .mpg-header strong, #mpg-modal-root .mpg-header strong,
+.mpg-inspiration-header strong { letter-spacing: .035em !important; }
+#mpg-manager-root .mpg-section-title { color: var(--mpg-text) !important; }
+
+html:not(.mpg-dlc-style) .mpg-inspiration-style-add,
+html:not(.mpg-dlc-style) .mpg-inspiration-style-badge,
+html:not(.mpg-dlc-style) .mpg-inspiration-editor-style { display: none !important; }
+html:not(.mpg-dlc-inspiration) [data-record-shortcut='inspirationCapture'],
+html:not(.mpg-dlc-inspiration) [data-record-shortcut='inspirationBox'],
+html:not(.mpg-dlc-style) [data-record-shortcut='stylePicker'],
+html:not(.mpg-dlc-quickWheel) [data-record-shortcut='quickWheel'],
+html:not(.mpg-dlc-trashTalk) [data-record-shortcut='trashTalk'] { display: none !important; }
+
+:is(#mpg-manager-root, #mpg-modal-root, #mpg-inspiration-root, #mpg-hotkey-panel-root,
+  #mpg-shotlab-root, #mpg-trash-talk-settings-root, #mpg-collector-root, #mpg-floating-dock)
+  :is(button, input, textarea, select):focus-visible {
+  outline: 2px solid var(--mpg-accent) !important; outline-offset: 3px !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  [id^='mpg-'], [id^='mpg-'] *, [id^='mpg-'] *::before, [id^='mpg-'] *::after {
+    animation: none !important; transition: none !important; scroll-behavior: auto !important;
+  }
+}

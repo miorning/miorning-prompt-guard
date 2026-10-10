@@ -1,11 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "Miorning Prompt Guard",
-  "version": "1.5.5",
-  "description": "AI视频提示词保险栓 v1.5.5：全成就彩蛋按钮常驻，未完成为灰色，完成后为红色。",
+  "name": "MIORNING 喵咛",
+  "version": "1.8.0",
+  "description": "MIORNING 喵咛：不想干活，但挺会帮忙。按需添加 DLC、指定网站回车提醒、可关闭每日备份。",
   "permissions": [
     "clipboardRead",
-    "storage"
+    "clipboardWrite",
+    "storage",
+    "offscreen",
+    "alarms",
+    "downloads"
   ],
   "host_permissions": [
     "<all_urls>"
@@ -13,24 +17,47 @@
   "content_scripts": [
     {
       "matches": [
+        "https://aigc.xinpianchang.com/*"
+      ],
+      "js": [
+        "shotlab-bridge.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
         "<all_urls>"
       ],
       "js": [
+        "module-policy.js",
+        "inspiration.js",
+        "hub.js",
         "content.js"
       ],
       "css": [
-        "content.css"
+        "content.css",
+        "brand.css",
+        "hub.css"
       ],
-      "run_at": "document_idle"
+      "run_at": "document_start"
     }
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
-    "default_title": "Miorning Prompt Guard"
+    "default_title": "MIORNING · 原图保存位置",
+    "default_icon": "assets/floating-on.png",
+    "default_popup": "storage-picker.html"
   },
   "web_accessible_resources": [
     {
       "resources": [
-        "assets/*"
+        "assets/*",
+        "storage-picker.html",
+        "storage-picker.css",
+        "storage-picker.js"
       ],
       "matches": [
         "<all_urls>"

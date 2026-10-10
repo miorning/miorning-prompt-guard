@@ -1,0 +1,69 @@
+:root { color-scheme: dark; }
+html, body { width: 430px; min-width: 430px; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 90% 0%, #421313 0, #171717 42%, #0d0d0d 100%);
+  color: #f2eee6;
+  font-family: Inter, "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+}
+main {
+  position: relative;
+  width: 100%;
+  min-height: 430px;
+  padding: 22px;
+  border: 1px solid #414141;
+  border-top: 4px solid #b31919;
+  border-radius: 0;
+  background: #191919;
+  box-shadow: 0 24px 70px rgba(0,0,0,.48);
+}
+.close {
+  position: absolute;
+  right: 14px;
+  top: 12px;
+  width: 32px;
+  padding: 0;
+  font-size: 19px;
+}
+.eyebrow { padding-right: 36px; color: #b31919; font: 800 10px/1.2 ui-monospace, Consolas, monospace; letter-spacing: .12em; }
+h1 { margin: 7px 0 9px; font-size: 22px; }
+.intro, .foot { margin: 0; color: #aaa49a; font-size: 12px; line-height: 1.6; }
+.status-card {
+  display: grid;
+  gap: 5px;
+  margin: 18px 0;
+  padding: 14px;
+  border: 1px solid #353535;
+  border-radius: 11px;
+  background: #111;
+}
+.status-card span { color: #8f8b84; font-size: 10px; }
+.status-card strong { overflow: hidden; color: #f2eee6; font-size: 16px; text-overflow: ellipsis; white-space: nowrap; }
+.status-card small { color: #8f8b84; font-size: 11px; line-height: 1.45; }
+.actions { display: flex; justify-content: flex-end; gap: 8px; margin: 0 0 14px; }
+button { height: 38px; padding: 0 13px; border: 1px solid #484848; border-radius: 8px; background: #292929; color: #f2eee6; font-weight: 750; cursor: pointer; }
+button:hover { border-color: #b31919; }
+button.primary { border-color: #d72c2c; background: #b31919; }
+button:disabled { opacity: .55; cursor: wait; }
+#message { min-height: 20px; margin-top: 10px; color: #e2dcd2; font-size: 12px; }
+#message.error { color: #ff8585; }
+.storage-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 21px; padding-right: 30px; }
+.storage-brand img { display: block; object-fit: contain; }
+.storage-brand b { display: block; letter-spacing: -.03em; font-size: 17px; }
+.storage-brand span { display: block; margin-top: 3px; color: #bdb3a4; font-size: 11px; }
+body, main { background: #191817; }
+.eyebrow { color: #e46960; }
+button:focus-visible { outline: 2px solid #e46960; outline-offset: 3px; }
+html.day { color-scheme: light; }
+html.day body, html.day main { background: #f2eee6; color: #28231f; }
+html.day main, html.day button { border-color: #c8bbab; }
+html.day .intro, html.day .foot, html.day .storage-brand span, html.day .status-card small, html.day .status-card span { color: #62584e; }
+html.day .status-card { background: #e9e2d7; border-color: #c8bbab; }
+html.day .status-card strong, html.day #message { color: #28231f; }
+html.day .eyebrow, html.day #message.error { color: #a91f1c; }
+html.day button { background: #e5dacb; color: #28231f; }
+html.day button.primary { background: #b31919; color: #fffaf1; }

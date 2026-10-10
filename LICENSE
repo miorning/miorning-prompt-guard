@@ -1,21 +1,146 @@
-MIT License
+MIORNING Community License 1.0
+Free Use / No Paid Redistribution or Paid Access to Software Functions
 
 Copyright (c) 2026 Miorning
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This is a custom source-available license. It is not an OSI-approved
+open-source license. Commercial creative work is expressly permitted below;
+this is not a blanket prohibition on commercial use.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. Scope and applicable versions
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+"Software" means the MIORNING extension and accompanying first-party code,
+documentation, and bundled files designated as covered by this License,
+including covered material in modified or derivative versions. This grant
+extends only to rights the copyright holder is entitled to license. Material
+identified as subject to a separate license remains under that license.
+
+This License first applies to the v1.8.0 release distributed with this notice.
+It applies to later releases only when they expressly carry this License.
+The historical MIT rights described in Section 6 are not changed.
+
+"Outputs" means creative results such as videos, images, prompts, or other
+deliverables made using the Software. A functioning copy of the Software,
+or access to its functionality, is not an Output merely because it is
+described as a deliverable.
+
+2. Permission to use, modify, and share
+
+Subject to these terms, you may use, run, study, copy, and modify the Software
+without a license fee. You may redistribute the Software and your modified
+versions at zero charge, in source or packaged form. You are not required
+to publish your modifications or provide their source code.
+
+Redistribution must retain this License and applicable copyright, attribution,
+and separate-license notices. Identify modified versions clearly and describe
+the changes in accompanying documentation; do not present them as unmodified
+official releases. Recipients must receive the permissions and restrictions
+of this License for the covered material. You may not offer that material
+under terms that remove these restrictions.
+
+You may refer to MIORNING to identify the original project. This License does
+not authorize impersonation of the author, misleading official branding, or
+claims of endorsement. It does not require a credit in your creative Outputs.
+
+3. Commercial creation and independent services are allowed
+
+You may use the Software for personal work, employment, internal business
+operations, and commercial production. You may accept paid commissions,
+create client work, sell or license Outputs, and monetize videos or other
+creative work. A company may make the Software available to its employees
+for its internal operations without paying a license fee.
+
+You may charge for your independent teaching, training, consulting, or human
+support. You may demonstrate the Software and direct learners or clients to
+a free download. The Software, a modified version, or access to its functions
+must not itself be a paid entitlement or require buying that service. Calling
+a paid software bundle a course, consultation, or free bonus does not avoid
+Section 4.
+
+The distinction is what you supply: charging for your own work, expertise,
+or creative results is allowed; charging others for copies of the Software
+or the ability to use its functions is not.
+
+4. No paid redistribution or paid access to Software functions
+
+Without separate written permission from the copyright holder, you may not:
+
+(a) Sell, rent, license for a fee, or otherwise charge for the Software or a
+    modified version, including paid downloads and paid distribution.
+(b) Include the Software or a modified version as a paid product, paid bundle,
+    membership benefit, or purchase-required bonus. Charging a distribution,
+    activation, or access fee still counts as charging for the Software.
+(c) Charge for feature unlocks, subscriptions, accounts, or other access to
+    the Software's functions, whether provided through an extension, hosted
+    interface, remote service, API, or integration into a paid offering.
+
+These restrictions apply even if the price is charged indirectly or the
+Software has been renamed, repackaged, or modified. They do not prohibit
+the creative services and internal business use expressly allowed in
+Section 3. An optional donation is allowed only when payment is not required
+for, and does not obtain, a copy, feature, or access unavailable without it.
+
+5. Outputs and third-party rights
+
+Your Outputs do not become subject to this License merely because you used
+the Software to make them. This License makes no ownership claim over those
+Outputs and does not require you to release them for free or publish sources.
+
+This does not grant rights in third-party images, footage, music, fonts,
+prompts, models, or other materials, nor waive a platform's terms. You must
+obtain any permissions needed for the materials and services you use. Merely
+calling a redistributed copy of the Software an Output does not change the
+terms that apply to that copy.
+
+6. Historical MIT releases remain under MIT
+
+Previously released MIT versions, and code lawfully obtained under those MIT
+grants, remain governed by their original MIT terms, including the rights
+those terms granted for commercial use and redistribution. This License does
+not retroactively withdraw, narrow, or replace those rights, including for
+identifiable MIT-covered portions also present in this release.
+
+The original MIT text is preserved in licenses/LEGACY-MIT.txt for that
+historical material. Its inclusion does not make the entire v1.8.0 release
+dual-licensed or offer a choice to apply MIT to new material licensed only
+under this License. Nothing here prevents you from exercising rights you
+independently hold under a valid MIT or other separate license.
+
+7. Breach, cure, and termination
+
+Permission granted by this License terminates if you breach its conditions.
+If this is your first violation of this License, permission is automatically
+reinstated when you fully stop and remedy the violation within 30 days after
+receiving written notice that identifies it. Otherwise, reinstatement requires
+the copyright holder's written permission. Reinstatement does not retroactively
+authorize prohibited charges or waive responsibility for an earlier breach.
+
+Termination affects only permission under this License. It does not revoke
+independent historical MIT rights or take ownership of your Outputs. A
+compliant recipient's own permission is not terminated solely because an
+upstream distributor breached this License.
+
+8. No warranties; limits of liability
+
+The Software is supplied without promises about its quality, availability,
+security, fitness for a particular task, or freedom from infringement. To the
+extent permitted by applicable law, the authors and copyright holders disclaim
+all warranties, whether express, implied, or imposed by law.
+
+To that same extent, they are not liable for losses, damages, claims, or costs
+arising from the Software or its use, including lost data, lost profit, service
+interruption, or claims by others, regardless of the legal theory asserted or
+whether the possibility was known. Nothing in this section excludes a right,
+remedy, warranty, or liability that applicable law does not allow to be excluded.
+
+9. Separate permission and controlling text
+
+The copyright holder may grant additional or different permissions in writing.
+Silence, public availability of the source, or past tolerance is not such a
+permission. No fee, exception, or additional obligation is created merely by
+requesting permission.
+
+This English LICENSE is the controlling text. docs/LICENSE.zh-CN.md is a
+Chinese explanation for convenience; if there is a difference, the English
+text governs. Rights not granted here or by a separate applicable license
+are reserved.

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MIORNING 原图保存位置</title>
+  <link rel="stylesheet" href="storage-picker.css">
+</head>
+<body>
+  <main>
+    <button id="close" class="close" type="button" aria-label="关闭">×</button>
+    <div class="storage-brand"><img src="assets/floating-on.png" width="38" height="42" alt="喵咛黑猫"><div><b>MIORNING</b><span>存好原图。别回头找不着。</span></div></div>
+    <div class="eyebrow">MIORNING · INSPIRATION STORAGE</div>
+    <h1>选择原图保存位置</h1>
+    <p class="intro">灵感箱只在配置里保存缩略图。截图原图会以固定文件名写入你选择的文件夹。</p>
+    <section class="status-card">
+      <span>当前文件夹</span>
+      <strong id="folder-name">尚未选择</strong>
+      <small id="permission-text">选择后，已有的浏览器内原图也会自动迁移过去。</small>
+    </section>
+    <div class="actions">
+      <button id="reauthorize" type="button" hidden>重新授权当前文件夹</button>
+      <button id="choose" class="primary" type="button">选择 / 更换文件夹</button>
+    </div>
+    <p class="foot">若浏览器询问授权时长，请选择“始终允许 / 每次访问时允许”。浏览器不提供该选项时，插件无法绕过系统安全策略强行取得永久硬盘权限。</p>
+    <div id="message" role="status"></div>
+  </main>
+  <script src="storage-picker.js"></script>
+</body>
+</html>
